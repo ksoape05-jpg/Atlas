@@ -1,0 +1,13 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+  "python.testing.unittestEnabled": true,
+  "python.testing.unittestArgs": [
+    "discover",
+    "-s",
+    "tests"
+  ],
+  "files.exclude": {
+    "**/__pycache__": true,
+    ".venv": true
+  }
+}
