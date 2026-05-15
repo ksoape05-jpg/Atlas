@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.py[cod]
+.streamlit/secrets.toml
+data/*.csv
+data/*.json
+data/meal_photos/
+!data/.gitkeep
+!data/meal_photos/.gitkeep
+*.zip
+*.xlsx
