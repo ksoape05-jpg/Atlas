@@ -29,6 +29,22 @@ streamlit run app.py
 
 Streamlit will print a local URL, usually `http://localhost:8501`.
 
+## GitHub and VS Code
+
+Atlas uses `https://github.com/ksoape05-jpg/Atlas.git` as its GitHub remote. Open this project folder directly in VS Code:
+
+```powershell
+code "C:\Users\Kiegu\OneDrive - Northwestern State University\Documents\New project"
+```
+
+To publish the local app baseline to GitHub from your normal Windows account, run:
+
+```powershell
+.\scripts\publish_atlas.ps1
+```
+
+The script stages source code, tests, sample data, Streamlit config, and VS Code config. It intentionally leaves private local files such as `data/*.csv`, `data/*.json`, `.venv`, caches, backups, and exports out of Git.
+
 ## Pages
 
 - **Setup**: Save your name, height, start/goal weight, start waist, goal date, calorie target, protein target, SNAP grocery budget, and planned training days.
@@ -40,7 +56,7 @@ Streamlit will print a local URL, usually `http://localhost:8501`.
 - **Financial Planner**: Set monthly budgets by category, log expenses with details, track income from part-time jobs, manage bank accounts, import transaction CSVs, and view budget vs actual summaries with charts.
 - **Etekcity Scale**: Import VeSync/Etekcity scale CSVs, store body metrics locally, chart scale weight, and sync the first scale reading of each day into Daily Check-in.
 - **Runna/Strava Import**: Upload a CSV with flexible column names. The app stores date, source, activity name, distance, moving time, pace, heart rate, calories, and notes.
-- **Fitbod Import**: Upload a CSV with flexible column names. The app stores date, source, workout name, exercise, sets, reps, weight, volume, duration, and notes.
+- **Fitbod Import**: Upload a CSV with flexible column names. The app stores date, source, workout name, exercise, sets, reps, weight, volume, and notes.
 - **Grocery + Budget**: Track grocery items, cost, protein, servings, cost per serving, cost per gram of protein, and remaining monthly SNAP budget.
 - **Walmart Shopping**: Generate a lazy high-protein weekly grocery plan, build a Walmart Plus pickup/delivery shopping list, open Walmart search links, estimate SNAP spend and protein value, import shopping CSVs, and send purchased items into the grocery log.
 - **Training Summary**: Combine Runna/Strava, Fitbod, and Daily Check-in training data into weekly mileage, lifting volume, load warnings, recovery flags, and estimated strength PRs.
